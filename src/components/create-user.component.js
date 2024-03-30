@@ -1,16 +1,12 @@
+// create-user.component.js
 import React, { Component } from "react";
-export default class CreateUser   extends Component {
+
+export default class CreateUser extends Component {
   render() {
     return (
       <div className="container">
-        <p>CreateUser component</p>
+        <p>Create User component</p>
       </div>
-
-        
-
-
-
-
     );
   }
 }
