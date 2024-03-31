@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from "axios";
 export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +50,10 @@ export default class CreateExercise extends Component {
     }
 
     console.log(exercise)
-    window.location = '/'
+    axios.post('http://localhost:5000/exercise/add',exercise)
+    .then(response=>{console.log(response)})
+    .catch((error)=>{console.log(error)});
+     
   }
   render() {
     return (
