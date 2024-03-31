@@ -18,7 +18,7 @@ export default class CreateExercise extends Component {
   }
 
   componentDidMount() {
-    this.setState({ users: ['test user'], username: 'test user' }); // Fixed typo here
+    this.setState({ users: ['test user'], username: '' }); // Fixed typo here
   }
   
 
